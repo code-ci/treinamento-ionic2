@@ -1,0 +1,31 @@
+
+<ion-content padding>
+  <ion-searchbar></ion-searchbar>
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>
+        Nosso filme
+      </ion-card-title>
+      <ion-row>
+        <ion-col>
+          <button ion-button clear icon-left>
+            <ion-icon name="star"></ion-icon>
+            <div>
+              Favorito
+            </div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button clear icon-left (click)="goToDetalhes()">
+            <ion-icon name="search">
+            </ion-icon>
+            <div>
+              Detalhes
+            </div>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
