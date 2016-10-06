@@ -1,13 +1,21 @@
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>Detlahes do Filme</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
 <ion-content padding>
-{{movie.title}}
-{{movie.overview}}
+  <button ion-button clear (click)="onBackClick()">
+    Voltar
+  </button>
+  <ion-card>
+    <ion-item class="poster">
+      <img *ngIf="movie.poster_path" src="http://image.tmdb.org/t/p/w500{{movie.poster_path}}" />
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item class="title">
+      <h2>{{movie.title}}</h2>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      {{movie.overview}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>

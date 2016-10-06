@@ -1,3 +1,26 @@
 page-detalhes {
+  ion-content.content-md {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EEE;
 
+    ion-card {
+      .poster {
+        padding: 0;
+
+        .item-inner {
+          padding-right: 0;
+
+          ion-label {
+            margin: 0;
+          }
+        }
+      }
+
+      .title {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 600;
+      }
+    }
+  }
 }

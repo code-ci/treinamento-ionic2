@@ -9,13 +9,15 @@ export class DetalhesPage {
 
   private movie:any;
 
-  constructor(public navCtrl: NavController,
-              public navParams: NavParams) {
-    this.movie = navParams.data.movie;
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.movie = this.navParams.data.movie;
   }
 
   ionViewDidLoad() {
     console.log('Hello Detalhes Page');
   }
 
+  onBackClick() {
+    this.navCtrl.pop();
+  }
 }

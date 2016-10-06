@@ -1,3 +1,36 @@
-page-contact {
+page-favoritos {
+  ion-content.content-md {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EEE;
 
+    ion-card {
+      .poster {
+        padding: 0;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+
+        .item-inner {
+          padding-right: 0;
+
+          ion-label {
+            margin-right: 0;
+          }
+        }
+
+        .title {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 40px;
+          background: rgba(0,0,0,0.5);
+          color: white;
+          line-height: 40px;
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+    }
+  }
 }
