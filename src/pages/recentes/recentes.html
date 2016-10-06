@@ -1,10 +1,12 @@
 
 <ion-content padding>
-  <ion-searchbar></ion-searchbar>
-  <ion-card>
+  <ion-searchbar [(ngModel)]="query" (ionInput)="search()">
+  </ion-searchbar>
+  <ion-card *ngFor="let movie of movies">
+    <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}"/>
     <ion-card-content>
-      <ion-card-title>
-        Nosso filme
+      <ion-card-title text-center>
+        {{movie.title}}
       </ion-card-title>
       <ion-row>
         <ion-col>
@@ -16,7 +18,7 @@
           </button>
         </ion-col>
         <ion-col>
-          <button ion-button clear icon-left (click)="goToDetalhes()">
+          <button ion-button clear icon-left (click)="goToDetalhes(movie)">
             <ion-icon name="search">
             </ion-icon>
             <div>
@@ -28,4 +30,6 @@
     </ion-card-content>
 
   </ion-card>
+
+
 </ion-content>

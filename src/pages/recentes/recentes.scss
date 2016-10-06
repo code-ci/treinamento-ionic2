@@ -1,3 +1,10 @@
-page-home {
-  background-color: red;
+page-recentes {
+  ion-content.content-md {
+    background-color: #EEE;
+
+    .poster {
+      height: 200px;
+      overflow: hidden;
+    }
+  }
 }
