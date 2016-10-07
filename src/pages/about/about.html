@@ -9,4 +9,11 @@
     <ion-item>Henrique Cansela</ion-item>
     <ion-item>Rafael Nunes</ion-item>
   </ion-card>
+
+  <ion-card>
+    <ion-item><h1 text-center>Alunos</h1></ion-item>
+    <ion-item *ngFor="let aluno of alunos">
+      {{aluno}}
+    </ion-item>
+  </ion-card>
 </ion-content>

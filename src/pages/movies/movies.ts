@@ -37,9 +37,13 @@ export class MoviesPage {
   }
 
   search() {
-    this.movieProvider.search(this.query).then((data) => {
-      this.movies = data.results;
-    });
+    this.movies = [];
+
+    if (this.query.length > 0) {
+      this.movieProvider.search(this.query).then((data) => {
+        this.movies = data.results;
+      });
+    }
   }
 
   goToDetalhes(movie)  {

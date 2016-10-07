@@ -39,9 +39,13 @@ export class SeriesPage {
   }
 
   search() {
-    this.seriesProvider.search(this.query).then((data) => {
-      this.series = data.results;
-    });
+    this.series = [];
+
+    if (this.query.length > 0) {
+      this.seriesProvider.search(this.query).then((data) => {
+        this.series = data.results;
+      });
+    }
   }
 
   goToDetalhes(serie)  {

@@ -16,7 +16,24 @@
 
 [http://www.joshmorony.com](http://www.joshmorony.com)
 
+[https://scotch.io](https://scotch.io)
+
 [CodePen Brazil](https://nvite.com/CodePenSorocaba/cbda)
+
+## Para rodar o projeto
+
+```sh
+
+# Instale a versão 6.7 do node
+
+npm install -g ionic
+
+# Acesse a pasta do projeto
+
+npm install
+ionic serve -a
+
+```
 
 ## Instrutores
 
@@ -68,3 +85,21 @@ export class Alunos {
     ];
 }
 ```
+
+## Screenshots
+
+![Movies](http://imgur.com/qVdZ140)
+
+![Movies Details](http://imgur.com/2MurK33)
+
+![Series](http://imgur.com/7X5yWhf)
+
+![Series Details](http://imgur.com/6yBJv2m)
+
+![Favorites](http://imgur.com/96XBobS)
+
+![About](http://imgur.com/6aEwZsV)
+
+## Agradecimentos
+
+Obrigado a todos os alunos e instrutores que participaram do curso. Abraço!

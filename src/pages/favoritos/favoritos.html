@@ -1,9 +1,9 @@
 <ion-content padding>
-  <ion-card *ngFor="let movie of favoritos; let i = index">
+  <ion-card *ngFor="let favorito of favoritos; let i = index">
     <ion-item class="poster">
-      <img *ngIf="movie.poster_path" src="http://image.tmdb.org/t/p/w500{{movie.poster_path}}" />
+      <img *ngIf="favorito.poster_path" src="http://image.tmdb.org/t/p/w500{{favorito.poster_path}}" />
       <div class="title">
-        {{movie.title}}
+        {{favorito.title}}{{favorito.name}}
       </div>
     </ion-item>
     <ion-row>
@@ -16,7 +16,7 @@
         </button>
       </ion-col>
       <ion-col text-center>
-        <button ion-button clear icon-left small (click)="goToDetalhes(movie)">
+        <button ion-button clear icon-left small (click)="goToDetalhes(favorito)">
           <ion-icon name="search">
           </ion-icon>
           <div>

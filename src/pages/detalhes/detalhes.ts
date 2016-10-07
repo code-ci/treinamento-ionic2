@@ -14,10 +14,6 @@ export class DetalhesPage {
     this.chien = this.navParams.data.chien;
   }
 
-  ionViewDidLoad() {
-    console.log('Hello Detalhes Page');
-  }
-
   onBackClick() {
     this.navCtrl.pop();
   }

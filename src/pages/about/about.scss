@@ -2,5 +2,10 @@ page-about {
   ion-content.content-md {
     font-family: 'Montserrat', sans-serif;
     background-color: #EEE;
+
+    ion-item {
+      font-size: 1.4rem;
+      font-weight: normal;
+    }
   }
 }
