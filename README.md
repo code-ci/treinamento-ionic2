@@ -88,17 +88,17 @@ export class Alunos {
 
 ## Screenshots
 
-![Movies](http://imgur.com/qVdZ140)
+![Movies](http://i.imgur.com/qVdZ140.png)
 
-![Movies Details](http://imgur.com/2MurK33)
+![Movies Details](http://i.imgur.com/2MurK33.png)
 
-![Series](http://imgur.com/7X5yWhf)
+![Series](http://i.imgur.com/7X5yWhf.png)
 
-![Series Details](http://imgur.com/6yBJv2m)
+![Series Details](http://i.imgur.com/6yBJv2m.png)
 
-![Favorites](http://imgur.com/96XBobS)
+![Favorites](http://i.imgur.com/96XBobS.png)
 
-![About](http://imgur.com/6aEwZsV)
+![About](http://i.imgur.com/6aEwZsV.png)
 
 ## Agradecimentos
 
