@@ -6,6 +6,8 @@
 
 [Ionic 2 - Documentação](https://ionicframework.com/docs/v2/)
 
+[Ionic-storage](https://github.com/driftyco/ionic-storage)
+
 [http://www.gajotres.net](http://www.gajotres.net)
 
 [http://www.joshmorony.com](http://www.joshmorony.com)
