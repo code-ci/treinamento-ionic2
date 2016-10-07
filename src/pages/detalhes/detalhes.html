@@ -4,18 +4,18 @@
   </button>
   <ion-card>
     <ion-item class="poster">
-      <img *ngIf="movie.poster_path" src="http://image.tmdb.org/t/p/w500{{movie.poster_path}}" />
+      <img *ngIf="chien.poster_path" src="http://image.tmdb.org/t/p/w500{{chien.poster_path}}" />
     </ion-item>
   </ion-card>
 
   <ion-card>
     <ion-item class="title">
-      <h2>{{movie.title}}</h2>
+      <h2>{{chien.title}}{{chien.name}}</h2>
     </ion-item>
   </ion-card>
   <ion-card>
     <ion-card-content>
-      {{movie.overview}}
+      {{chien.overview}}
     </ion-card-content>
   </ion-card>
 </ion-content>

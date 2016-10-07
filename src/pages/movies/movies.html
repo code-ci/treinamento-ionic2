@@ -1,5 +1,8 @@
+
 <ion-content padding>
-  <ion-card *ngFor="let movie of favoritos; let i = index">
+  <ion-searchbar placeholder="Buscar por filmes" [(ngModel)]="query" (ionInput)="search()">
+  </ion-searchbar>
+  <ion-card *ngFor="let movie of movies">
     <ion-item class="poster">
       <img *ngIf="movie.poster_path" src="http://image.tmdb.org/t/p/w500{{movie.poster_path}}" />
       <div class="title">
@@ -8,10 +11,10 @@
     </ion-item>
     <ion-row>
       <ion-col text-center>
-        <button ion-button clear small icon-left (click)="removeFavoritos(i)">
-          <ion-icon name="star-outline"></ion-icon>
+        <button ion-button clear small icon-left (click)="addToFavoritos(movie)">
+          <ion-icon name="star"></ion-icon>
           <div>
-            Remover
+            Favorito
           </div>
         </button>
       </ion-col>

@@ -7,10 +7,11 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class DetalhesPage {
 
-  private movie:any;
+  private chien:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.movie = this.navParams.data.movie;
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams) {
+    this.chien = this.navParams.data.chien;
   }
 
   ionViewDidLoad() {

@@ -1,17 +1,16 @@
-
 <ion-content padding>
-  <ion-searchbar [(ngModel)]="query" (ionInput)="search()">
+  <ion-searchbar placeholder="Buscar por seríes" [(ngModel)]="query" (ionInput)="search()">
   </ion-searchbar>
-  <ion-card *ngFor="let movie of movies">
+  <ion-card *ngFor="let serie of series">
     <ion-item class="poster">
-      <img *ngIf="movie.poster_path" src="http://image.tmdb.org/t/p/w500{{movie.poster_path}}" />
+      <img *ngIf="serie.poster_path" src="http://image.tmdb.org/t/p/w500{{serie.poster_path}}" />
       <div class="title">
-        {{movie.title}}
+        {{serie.name}}
       </div>
     </ion-item>
     <ion-row>
       <ion-col text-center>
-        <button ion-button clear small icon-left (click)="addToFavoritos(movie)">
+        <button ion-button clear small icon-left (click)="addToFavoritos(serie)">
           <ion-icon name="star"></ion-icon>
           <div>
             Favorito
@@ -19,7 +18,7 @@
         </button>
       </ion-col>
       <ion-col text-center>
-        <button ion-button clear icon-left small (click)="goToDetalhes(movie)">
+        <button ion-button clear icon-left small (click)="goToDetalhes(serie)">
           <ion-icon name="search">
           </ion-icon>
           <div>

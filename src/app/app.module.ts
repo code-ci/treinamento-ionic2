@@ -4,8 +4,9 @@ import { Storage } from '@ionic/storage';
 import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { FavoritosPage } from '../pages/favoritos/favoritos';
-import { RecentesPage } from '../pages/recentes/recentes';
+import { MoviesPage } from '../pages/movies/movies';
 import { DetalhesPage } from '../pages/detalhes/detalhes';
+import { SeriesPage } from '../pages/series/series';
 import { TabsPage } from '../pages/tabs/tabs';
 
 @NgModule({
@@ -13,8 +14,9 @@ import { TabsPage } from '../pages/tabs/tabs';
     MyApp,
     AboutPage,
     FavoritosPage,
-    RecentesPage,
+    MoviesPage,
     DetalhesPage,
+    SeriesPage,
     TabsPage
   ],
   imports: [
@@ -27,8 +29,9 @@ import { TabsPage } from '../pages/tabs/tabs';
     MyApp,
     AboutPage,
     FavoritosPage,
-    RecentesPage,
+    MoviesPage,
     DetalhesPage,
+    SeriesPage,
     TabsPage
   ],
   providers: [Storage]

@@ -3,27 +3,28 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { DetalhesPage } from '../detalhes/detalhes';
-import { MovieProvider } from '../../providers/movie-provider';
+import { SeriesProvider } from '../../providers/series-provider';
 
 @Component({
-  selector: 'page-recentes',
-  templateUrl: 'recentes.html',
-  providers: [MovieProvider]
+  selector: 'page-series',
+  templateUrl: 'series.html',
+  providers: [SeriesProvider]
 })
-export class RecentesPage {
+export class SeriesPage {
 
   private query:string;
-  private movies:Array<any>;
-  private
+  private series:Array<any>;
 
-  constructor(public navCtrl: NavController, private movieProvider: MovieProvider, private storage:Storage) {
-    this.movies = [];
+  constructor(public navCtrl: NavController,
+              private seriesProvider: SeriesProvider,
+              private storage:Storage) {
+    this.series = [];
   }
 
   ionViewDidLoad() {
   }
 
-  addToFavoritos(movie) {
+  addToFavoritos(serie) {
     this.storage.get("favoritos").then(value => {
       let favoritos;
       if (value) {
@@ -32,20 +33,20 @@ export class RecentesPage {
         favoritos = [];
       }
 
-      favoritos.push(movie);
+      favoritos.push(serie);
       this.storage.set("favoritos", JSON.stringify(favoritos));
     });
   }
 
   search() {
-    this.movieProvider.search(this.query).then((data) => {
-      this.movies = data.results;
+    this.seriesProvider.search(this.query).then((data) => {
+      this.series = data.results;
     });
   }
 
-  goToDetalhes(movie)  {
+  goToDetalhes(serie)  {
     this.navCtrl.push(DetalhesPage, {
-      movie: movie
+      chien: serie
     });
   }
 
