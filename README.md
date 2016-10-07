@@ -59,11 +59,12 @@ export class Alunos {
       'Lucas William Correa Schiming',
       'Miguel Otavio Francisco de Oliveira',
       'Paulo Vinicius Baleeiro Ferreira',
+      'Rosane Ramos de Almeida',
       'Rafael Lopes Leme da Silva',
       'Valdinei Baptista Junior',
       'Valdir Eduardo Teles Amorim',
       'Vinicius Fernando Sampaio da Silva',
-      'Wagner da Silva Goncalves Gabriel'
+      'Wagner da Silva Goncalves Gabriel Nunes'
     ];
 }
 ```
