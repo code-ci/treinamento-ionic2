@@ -2,6 +2,10 @@
 
 ![Ionic 2](http://ionic.io/img/2.png)
 
+## Feedback
+
+[Formulário de feedback](https://goo.gl/forms/tpVgTeYfhrgNNzkD3)
+
 ## Material de estudo
 
 [Ionic 2 - Documentação](https://ionicframework.com/docs/v2/)
