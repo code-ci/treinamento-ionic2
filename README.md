@@ -4,7 +4,9 @@
 
 ## Feedback
 
-[Formulário de feedback](https://goo.gl/forms/tpVgTeYfhrgNNzkD3)
+[Formulário de feedback - Fatec Sorocaba](https://goo.gl/forms/tpVgTeYfhrgNNzkD3)
+
+[Formulário de feedback - Fatec São Roque](https://goo.gl/forms/Z6Jy6EZuCrz4MxOz1)
 
 ## Material de estudo
 
