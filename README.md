@@ -55,6 +55,11 @@ export class Instrutores {
         site: "http://rafaelnunes.me"
         github: "https://github.com/RafaelRNunes"
     };
+    
+    private thiago_tersariol = {
+        email: "http://thiago_tersariol@hotmail.com"
+        github: "https://github.com/tersariol"
+    };
 }
 ```
 
